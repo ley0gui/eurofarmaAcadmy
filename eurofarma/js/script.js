@@ -230,7 +230,7 @@
     }
 }
 
-// Initialize carousel when DOM is ready
+// Initialize carousel when page loads
 document.addEventListener('DOMContentLoaded', () => {
     new Carousel();
 });

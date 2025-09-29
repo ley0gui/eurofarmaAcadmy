@@ -1,0 +1,53 @@
+/* Learning Paths */
+#paths{
+    margin: 20px;
+}
+
+.path-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.path-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.path-progress {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.path-steps {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.step-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 120px;
+    position: relative;
+}
+
+.step-completed {
+    background: linear-gradient(45deg, #4ecdc4, #44a08d);
+}
+
+.step-current {
+    background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+}

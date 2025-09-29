@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/ranking.css">
+    <link rel="stylesheet" href="css/meus-cursos.css">
+    <link rel="stylesheet" href="css/recompensas.css">
+    <link rel="stylesheet" href="css/trilhas-ensino.css">
+    <link rel="stylesheet" href="css/catalogo.css">
 </head>
 <body>
 
@@ -33,9 +38,7 @@
                             <li><a href="#" class="nav-link" data-section="rewards">Recompensas</a></li>
                         </ul>
                     </nav>
-                    <button class="mobile-menu-btn">
-                        <i class="fas fa-bars"></i>
-                    </button>
+
                     <div class="user-profile">
                         <div class="points-badge">
                             <i class="fas fa-star"></i>
@@ -559,66 +562,119 @@
             </section>
 
             <!-- Catálogo de Cursos -->
-            <section class="content-section" id="catalog">
-                <div class="section-header">
-                    <h1 class="section-title">Catálogo de Cursos</h1>
-                    <p class="section-subtitle">Explore todos os cursos disponíveis na plataforma</p>
-                </div>
+<section class="content-section" id="catalog">
+    <div class="section-header">
+        <h1 class="section-title">Catálogo de Cursos</h1>
+        <p class="section-subtitle">Explore todos os cursos disponíveis na plataforma</p>
+    </div>
 
-                <div class="courses-grid">
-                    <div class="course-card">
-                        <div class="course-header">
-                            <span class="course-level level-beginner">Iniciante</span>
-                            <span class="course-points"><i class="fas fa-star"></i> 80 pts</span>
-                        </div>
-                        <h3 class="course-title">Introdução à Farmacologia</h3>
-                        <p class="course-description">Conceitos básicos sobre medicamentos e seu funcionamento no organismo.</p>
-                        <div class="course-footer">
-                            <span><i class="fas fa-clock"></i> 6 horas</span>
-                            <button class="btn-redeem">Iniciar Curso</button>
-                        </div>
-                    </div>
+    <div class="courses-grid">
+        <div class="course-card card-beginner">
+            <div class="course-header">
+                <span class="course-level level-beginner">Iniciante</span>
+                <span class="course-points"><i class="fas fa-star"></i> 80 pts</span>
+            </div>
+            <h3 class="course-title">Introdução à Farmacologia</h3>
+            <p class="course-description">Conceitos básicos sobre medicamentos e seu funcionamento no organismo.</p>
+            <div class="course-footer">
+                <span><i class="fas fa-clock"></i> 6 horas</span>
+                <button class="btn-redeem">Iniciar Curso</button>
+            </div>
+        </div>
 
-                    <div class="course-card">
-                        <div class="course-header">
-                            <span class="course-level level-intermediate">Intermediário</span>
-                            <span class="course-points"><i class="fas fa-star"></i> 150 pts</span>
-                        </div>
-                        <h3 class="course-title">Controle de Qualidade</h3>
-                        <p class="course-description">Métodos analíticos e controle de qualidade em produtos farmacêuticos.</p>
-                        <div class="course-footer">
-                            <span><i class="fas fa-clock"></i> 8 horas</span>
-                            <button class="btn-redeem">Iniciar Curso</button>
-                        </div>
-                    </div>
+        <div class="course-card card-intermediate">
+            <div class="course-header">
+                <span class="course-level level-intermediate">Intermediário</span>
+                <span class="course-points"><i class="fas fa-star"></i> 150 pts</span>
+            </div>
+            <h3 class="course-title">Controle de Qualidade</h3>
+            <p class="course-description">Métodos analíticos e controle de qualidade em produtos farmacêuticos.</p>
+            <div class="course-footer">
+                <span><i class="fas fa-clock"></i> 8 horas</span>
+                <button class="btn-redeem">Iniciar Curso</button>
+            </div>
+        </div>
 
-                    <div class="course-card">
-                        <div class="course-header">
-                            <span class="course-level level-advanced">Avançado</span>
-                            <span class="course-points"><i class="fas fa-star"></i> 250 pts</span>
-                        </div>
-                        <h3 class="course-title">Análises Regulatórias</h3>
-                        <p class="course-description">Navegação complexa no ambiente regulatório internacional.</p>
-                        <div class="course-footer">
-                            <span><i class="fas fa-clock"></i> 12 horas</span>
-                            <button class="btn-redeem">Iniciar Curso</button>
-                        </div>
-                    </div>
+        <div class="course-card card-advanced">
+            <div class="course-header">
+                <span class="course-level level-advanced">Avançado</span>
+                <span class="course-points"><i class="fas fa-star"></i> 250 pts</span>
+            </div>
+            <h3 class="course-title">Análises Regulatórias</h3>
+            <p class="course-description">Navegação complexa no ambiente regulatório internacional.</p>
+            <div class="course-footer">
+                <span><i class="fas fa-clock"></i> 12 horas</span>
+                <button class="btn-redeem">Iniciar Curso</button>
+            </div>
+        </div>
 
-                    <div class="course-card">
-                        <div class="course-header">
-                            <span class="course-level level-beginner">Iniciante</span>
-                            <span class="course-points"><i class="fas fa-star"></i> 90 pts</span>
-                        </div>
-                        <h3 class="course-title">Ética Farmacêutica</h3>
-                        <p class="course-description">Princípios éticos na prática e pesquisa farmacêutica.</p>
-                        <div class="course-footer">
-                            <span><i class="fas fa-clock"></i> 5 horas</span>
-                            <button class="btn-redeem">Iniciar Curso</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div class="course-card card-beginner">
+            <div class="course-header">
+                <span class="course-level level-beginner">Iniciante</span>
+                <span class="course-points"><i class="fas fa-star"></i> 90 pts</span>
+            </div>
+            <h3 class="course-title">Ética Farmacêutica</h3>
+            <p class="course-description">Princípios éticos na prática e pesquisa farmacêutica.</p>
+            <div class="course-footer">
+                <span><i class="fas fa-clock"></i> 5 horas</span>
+                <button class="btn-redeem">Iniciar Curso</button>
+            </div>
+        </div>
+
+        <div class="course-card card-beginner">
+            <div class="course-header">
+                <span class="course-level level-beginner">Iniciante</span>
+                <span class="course-points"><i class="fas fa-star"></i> 80 pts</span>
+            </div>
+            <h3 class="course-title">Introdução à Liderança</h3>
+            <p class="course-description">Conceitos básicos sobre liderança no ambiente de trabalho</p>
+            <div class="course-footer">
+                <span><i class="fas fa-clock"></i> 6 horas</span>
+                <button class="btn-redeem">Iniciar Curso</button>
+            </div>
+        </div>
+
+        <div class="course-card card-intermediate">
+            <div class="course-header">
+                <span class="course-level level-intermediate">Intermediário</span>
+                <span class="course-points"><i class="fas fa-star"></i> 150 pts</span>
+            </div>
+            <h3 class="course-title">Gestão e Governança</h3>
+            <p class="course-description">Aprenda a como gerir sua equipe da melhor forma.</p>
+            <div class="course-footer">
+                <span><i class="fas fa-clock"></i> 8 horas</span>
+                <button class="btn-redeem">Iniciar Curso</button>
+            </div>
+        </div>
+
+        <div class="course-card card-advanced">
+            <div class="course-header">
+                <span class="course-level level-advanced">Avançado</span>
+                <span class="course-points"><i class="fas fa-star"></i> 250 pts</span>
+            </div>
+            <h3 class="course-title">Análises de Desempenho</h3>
+            <p class="course-description">Aprenda técnicas de análise de perfomance.</p>
+            <div class="course-footer">
+                <span><i class="fas fa-clock"></i> 12 horas</span>
+                <button class="btn-redeem">Iniciar Curso</button>
+            </div>
+        </div>
+
+        <div class="course-card card-beginner">
+            <div class="course-header">
+                <span class="course-level level-beginner">Iniciante</span>
+                <span class="course-points"><i class="fas fa-star"></i> 90 pts</span>
+            </div>
+            <h3 class="course-title">Ética de trabalho</h3>
+            <p class="course-description">Princípios éticos no ambiente de trabalho.</p>
+            <div class="course-footer">
+                <span><i class="fas fa-clock"></i> 5 horas</span>
+                <button class="btn-redeem">Iniciar Curso</button>
+            </div>
+        </div>
+        
+    </div>
+</section>
 
             <!-- Trilhas de Ensino -->
             <section class="content-section" id="paths">

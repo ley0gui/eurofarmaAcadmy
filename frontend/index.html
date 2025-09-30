@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/ranking.css">
+    <link rel="stylesheet" href="css/meus-cursos.css">
+    <link rel="stylesheet" href="css/recompensas.css">
+    <link rel="stylesheet" href="css/trilhas-ensino.css">
+    <link rel="stylesheet" href="css/catalogo.css">
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eurofarma Academy - Plataforma de Ensino</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <a href="#" class="logo">
+                        <i class="fas fa-graduation-cap"></i> Eurofarma Academy
+                    </a>
+                    <nav>
+                        <ul class="nav-menu">
+                            <li><a href="#" class="nav-link active" data-section="dashboard">Dashboard</a></li>
+                            <li><a href="#" class="nav-link" data-section="courses">Meus Cursos</a></li>
+                            <li><a href="#" class="nav-link" data-section="catalog">Catálogo</a></li>
+                            <li><a href="#" class="nav-link" data-section="paths">Trilhas</a></li>
+                            <li><a href="#" class="nav-link" data-section="ranking">Ranking</a></li>
+                            <li><a href="#" class="nav-link" data-section="rewards">Recompensas</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="user-profile">
+                        <div class="points-badge">
+                            <i class="fas fa-star"></i>
+                            <span id="user-points">2,847</span> pontos
+                        </div>
+                        <div class="user-avatar">JD</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <main class="main-content">
+            <div class="container">
+                <!-- Dashboard -->
+                <section class="content-section active" id="dashboard">
+                    <div class="section-header">
+                        <h1 class="section-title">Bem-vindo de volta, João!</h1>
+                        <p class="section-subtitle">Continue sua jornada de aprendizado e conquiste novos objetivos</p>
+                    </div>
+    
+                    <div class="dashboard-grid">
+                        <div class="welcome-card">
+                            <h2>Seu Progresso Atual</h2>
+                            <p>Você está fazendo um ótimo trabalho! Continue assim e alcance novos patamares.</p>
+                            
+                            <div style="margin-top: 2rem;">
+                                <h3>Próximo Objetivo: Especialista em Farmacologia</h3>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 68%;"></div>
+                                </div>
+                                <p>68% concluído - Faltam apenas 3 cursos!</p>
+                            </div>
+                        </div>
+    
+                        <div class="stats-card">
+                            <h3>Suas Estatísticas</h3>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <div class="stat-number">12</div>
+                                    <div>Cursos Concluídos</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">45h</div>
+                                    <div>Tempo de Estudo</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">5°</div>
+                                    <div>Posição Ranking</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">3</div>
+                                    <div>Certificados</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <h3 style="color: white; margin-bottom: 1rem;">Cursos Recomendados Para Você</h3>
+                    <div class="carousel-section">
+                        <div class="carousel-header">
+                            <h3>Cursos Recomendados</h3>
+                            <div class="carousel-controls">
+                                <button class="carousel-btn" id="prevBtn">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-btn" id="nextBtn">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+            
+                        <div class="carousel-container">
+                            <div class="carousel-track" id="carouselTrack">
+                                <!-- Slide 1 -->
+                                <div class="carousel-slide">
+                                    <div class="course-card">
+                                        <div class="course-header">
+                                            <span class="course-level level-intermediate">Intermediário</span>
+                                            <span class="course-points"><i class="fas fa-star"></i> 150 pts</span>
+                                        </div>
+                                        <h3 class="course-title">Farmacologia Avançada</h3>
+                                        <p class="course-description">Aprofunde-se nos mecanismos de ação dos medicamentos e interações farmacológicas complexas.</p>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 0%;"></div>
+                                        </div>
+                                        <div class="course-footer">
+                                            <span><i class="fas fa-clock"></i> 8 horas</span>
+                                            <span><i class="fas fa-users"></i> 234 alunos</span>
+                                        </div>
+                                    </div>
+                                    <div class="course-card">
+                                        <div class="course-header">
+                                            <span class="course-level level-beginner">Iniciante</span>
+                                            <span class="course-points"><i class="fas fa-star"></i> 100 pts</span>
+                                        </div>
+                                        <h3 class="course-title">Compliance Farmacêutico</h3>
+                                        <p class="course-description">Normas regulatórias e boas práticas na indústria farmacêutica.</p>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 0%;"></div>
+                                        </div>
+                                        <div class="course-footer">
+                                            <span><i class="fas fa-clock"></i> 4 horas</span>
+                                            <span><i class="fas fa-users"></i> 189 alunos</span>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <!-- Slide 2 -->
+                                <div class="carousel-slide">
+                                    <div class="course-card">
+                                        <div class="course-header">
+                                            <span class="course-level level-advanced">Avançado</span>
+                                            <span class="course-points"><i class="fas fa-star"></i> 200 pts</span>
+                                        </div>
+                                        <h3 class="course-title">Análise de Dados Clínicos</h3>
+                                        <p class="course-description">Técnicas avançadas de análise estatística aplicadas à pesquisa clínica.</p>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 0%;"></div>
+                                        </div>
+                                        <div class="course-footer">
+                                            <span><i class="fas fa-clock"></i> 12 horas</span>
+                                            <span><i class="fas fa-users"></i> 156 alunos</span>
+                                        </div>
+                                    </div>
+                                    <div class="course-card">
+                                        <div class="course-header">
+                                            <span class="course-level level-intermediate">Intermediário</span>
+                                            <span class="course-points"><i class="fas fa-star"></i> 180 pts</span>
+                                        </div>
+                                        <h3 class="course-title">Gestão de Projetos em Saúde</h3>
+                                        <p class="course-description">Metodologias ágeis aplicadas ao desenvolvimento de produtos farmacêuticos.</p>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 0%;"></div>
+                                        </div>
+                                        <div class="course-footer">
+                                            <span><i class="fas fa-clock"></i> 10 horas</span>
+                                            <span><i class="fas fa-users"></i> 198 alunos</span>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <!-- Slide 3 -->
+                                <div class="carousel-slide">
+                                    <div class="course-card">
+                                        <div class="course-header">
+                                            <span class="course-level level-beginner">Iniciante</span>
+                                            <span class="course-points"><i class="fas fa-star"></i> 120 pts</span>
+                                        </div>
+                                        <h3 class="course-title">Sustentabilidade na Indústria</h3>
+                                        <p class="course-description">Práticas sustentáveis e responsabilidade social na indústria farmacêutica.</p>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 0%;"></div>
+                                        </div>
+                                        <div class="course-footer">
+                                            <span><i class="fas fa-clock"></i> 6 horas</span>
+                                            <span><i class="fas fa-users"></i> 287 alunos</span>
+                                        </div>
+                                    </div>
+                                    <div class="course-card">
+                                        <div class="course-header">
+                                            <span class="course-level level-advanced">Avançado</span>
+                                            <span class="course-points"><i class="fas fa-star"></i> 220 pts</span>
+                                        </div>
+                                        <h3 class="course-title">Inteligência Artificial em Saúde</h3>
+                                        <p class="course-description">Aplicações de IA no desenvolvimento e descoberta de medicamentos.</p>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 0%;"></div>
+                                        </div>
+                                        <div class="course-footer">
+                                            <span><i class="fas fa-clock"></i> 14 horas</span>
+                                            <span><i class="fas fa-users"></i> 95 alunos</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                        </div>
+                    </div>
+    
+                    <div class="path-card">
+                        <div class="path-header">
+                            <h3>Trilha: Compliance e Qualidade</h3>
+                            <span class="course-points"><i class="fas fa-trophy"></i> 400 pts</span>
+                        </div>
+                        <p>Domine os aspectos regulatórios e de qualidade essenciais para a indústria farmacêutica.</p>
+                        
+                        <div class="path-progress">
+                            <span>Progresso: 0/4 cursos concluídos</span>
+                            <div class="progress-bar" style="flex: 1;">
+                                <div class="progress-fill" style="width: 0%;"></div>
+                            </div>
+                            <span>0%</span>
+                        </div>
+                        
+                        <div class="path-steps">
+                            <div class="step-item step-current">
+                                <i class="fas fa-play"></i>
+                                <div>Compliance Básico</div>
+                            </div>
+                            <div class="step-item">
+                                <i class="fas fa-lock"></i>
+                                <div>BPF/GMP</div>
+                            </div>
+                            <div class="step-item">
+                                <i class="fas fa-lock"></i>
+                                <div>Controle Qualidade</div>
+                            </div>
+                            <div class="step-item">
+                                <i class="fas fa-lock"></i>
+                                <div>Auditoria</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <!-- Ranking -->
+                <section class="content-section" id="ranking">
+                    <div class="section-header">
+                        <h1 class="section-title">Ranking de Pontuação</h1>
+                        <p class="section-subtitle">Veja sua posição entre os colaboradores mais engajados</p>
+                    </div>
+    
+                    <div class="ranking-table">
+                        <div class="ranking-header">
+                            <h3>Top 10 - Este Mês</h3>
+                            <div class="points-badge">
+                                <i class="fas fa-trophy"></i>
+                                Sua posição: 5°
+                            </div>
+                        </div>
+    
+                        <ul class="ranking-list">
+                            <li class="ranking-item">
+                                <div class="ranking-position position-1">1°</div>
+                                <div class="user-info">
+                                    <div class="user-avatar">AM</div>
+                                    <div>
+                                        <div style="font-weight: bold;">Ana Maria Santos</div>
+                                        <div style="opacity: 0.7;">P&D • 8 cursos concluídos</div>
+                                    </div>
+                                </div>
+                                <div class="course-points">
+                                    <i class="fas fa-star"></i>
+                                    4,290 pts
+                                </div>
+                            </li>
+    
+                            <li class="ranking-item">
+                                <div class="ranking-position position-2">2°</div>
+                                <div class="user-info">
+                                    <div class="user-avatar">RC</div>
+                                    <div>
+                                        <div style="font-weight: bold;">Ricardo Costa</div>
+                                        <div style="opacity: 0.7;">Qualidade • 7 cursos concluídos</div>
+                                    </div>
+                                </div>
+                                <div class="course-points">
+                                    <i class="fas fa-star"></i>
+                                    3,850 pts
+                                </div>
+                            </li>
+    
+                            <li class="ranking-item">
+                                <div class="ranking-position position-3">3°</div>
+                                <div class="user-info">
+                                    <div class="user-avatar">MF</div>
+                                    <div>
+                                        <div style="font-weight: bold;">Marina Ferreira</div>
+                                        <div style="opacity: 0.7;">Regulatório • 6 cursos concluídos</div>
+                                    </div>
+                                </div>
+                                <div class="course-points">
+                                    <i class="fas fa-star"></i>
+                                    3,420 pts
+                                </div>
+                            </li>
+    
+                            <li class="ranking-item">
+                                <div class="ranking-position">4°</div>
+                                <div class="user-info">
+                                    <div class="user-avatar">LS</div>
+                                    <div>
+                                        <div style="font-weight: bold;">Lucas Silva</div>
+                                        <div style="opacity: 0.7;">Marketing • 5 cursos concluídos</div>
+                                    </div>
+                                </div>
+                                <div class="course-points">
+                                    <i class="fas fa-star"></i>
+                                    3,120 pts
+                                </div>
+                            </li>
+    
+                            <li class="ranking-item" style="background: rgba(255, 215, 0, 0.2); border: 2px solid #ffd700;">
+                                <div class="ranking-position">5°</div>
+                                <div class="user-info">
+                                    <div class="user-avatar">JD</div>
+                                    <div>
+                                        <div style="font-weight: bold;">João Dias (Você)</div>
+                                        <div style="opacity: 0.7;">Farmacologia • 4 cursos concluídos</div>
+                                    </div>
+                                </div>
+                                <div class="course-points">
+                                    <i class="fas fa-star"></i>
+                                    2,847 pts
+                                </div>
+                            </li>
+    
+                            <li class="ranking-item">
+                                <div class="ranking-position">6°</div>
+                                <div class="user-info">
+                                    <div class="user-avatar">CP</div>
+                                    <div>
+                                        <div style="font-weight: bold;">Carla Pereira</div>
+                                        <div style="opacity: 0.7;">Vendas • 4 cursos concluídos</div>
+                                    </div>
+                                </div>
+                                <div class="course-points">
+                                    <i class="fas fa-star"></i>
+                                    2,650 pts
+                                </div>
+                            </li>
+    
+                            <li class="ranking-item">
+                                <div class="ranking-position">7°</div>
+                                <div class="user-info">
+                                    <div class="user-avatar">TO</div>
+                                    <div>
+                                        <div style="font-weight: bold;">Thiago Oliveira</div>
+                                        <div style="opacity: 0.7;">TI • 3 cursos concluídos</div>
+                                    </div>
+                                </div>
+                                <div class="course-points">
+                                    <i class="fas fa-star"></i>
+                                    2,340 pts
+                                </div>
+                            </li>
+    
+                            <li class="ranking-item">
+                                <div class="ranking-position">8°</div>
+                                <div class="user-info">
+                                    <div class="user-avatar">JM</div>
+                                    <div>
+                                        <div style="font-weight: bold;">Julia Mendes</div>
+                                        <div style="opacity: 0.7;">RH • 3 cursos concluídos</div>
+                                    </div>
+                                </div>
+                                <div class="course-points">
+                                    <i class="fas fa-star"></i>
+                                    2,100 pts
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+    
+                <!-- Recompensas -->
+                <section class="content-section" id="rewards">
+                    <div class="section-header">
+                        <h1 class="section-title">Loja de Recompensas</h1>
+                        <p class="section-subtitle">Troque seus pontos por recompensas incríveis</p>
+                    </div>
+    
+                    <div class="rewards-grid">
+                        <div class="reward-card">
+                            <div class="reward-icon">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <h3 class="reward-title">Vale Cafeteria</h3>
+                            <p style="opacity: 0.8; margin: 1rem 0;">Voucher para uso na cafeteria da empresa</p>
+                            <div class="reward-cost">500 pontos</div>
+                            <button class="btn-redeem">Resgatar</button>
+                        </div>
+    
+                        <div class="reward-card">
+                            <div class="reward-icon">
+                                <i class="fas fa-tshirt"></i>
+                            </div>
+                            <h3 class="reward-title">Camiseta Eurofarma</h3>
+                            <p style="opacity: 0.8; margin: 1rem 0;">Camiseta oficial da empresa</p>
+                            <div class="reward-cost">800 pontos</div>
+                            <button class="btn-redeem">Resgatar</button>
+                        </div>
+    
+                        <div class="reward-card">
+                            <div class="reward-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h3 class="reward-title">Livro Técnico</h3>
+                            <p style="opacity: 0.8; margin: 1rem 0;">Livro especializado na sua área de interesse</p>
+                            <div class="reward-cost">1,200 pontos</div>
+                            <button class="btn-redeem">Resgatar</button>
+                        </div>
+    
+                        <div class="reward-card">
+                            <div class="reward-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h3 class="reward-title">Dia de Folga Extra</h3>
+                            <p style="opacity: 0.8; margin: 1rem 0;">Um dia de descanso adicional</p>
+                            <div class="reward-cost">2,000 pontos</div>
+                            <button class="btn-redeem" disabled>Pontos Insuficientes</button>
+                        </div>
+    
+                        <div class="reward-card">
+                            <div class="reward-icon">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <h3 class="reward-title">Kit Brindes</h3>
+                            <p style="opacity: 0.8; margin: 1rem 0;">Kit com caneca, caneta e bloco de notas</p>
+                            <div class="reward-cost">600 pontos</div>
+                            <button class="btn-redeem">Resgatar</button>
+                        </div>
+    
+                        <div class="reward-card">
+                            <div class="reward-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="reward-title">Curso Externo</h3>
+                            <p style="opacity: 0.8; margin: 1rem 0;">Participação em evento ou curso externo</p>
+                            <div class="reward-cost">3,000 pontos</div>
+                            <button class="btn-redeem" disabled>Pontos Insuficientes</button>
+                        </div>
+    
+                        <div class="reward-card">
+                            <div class="reward-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h3 class="reward-title">Almoço Premium</h3>
+                            <p style="opacity: 0.8; margin: 1rem 0;">Refeição especial no restaurante executivo</p>
+                            <div class="reward-cost">400 pontos</div>
+                            <button class="btn-redeem">Resgatar</button>
+                        </div>
+    
+                        <div class="reward-card">
+                            <div class="reward-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3 class="reward-title">Reconhecimento</h3>
+                            <p style="opacity: 0.8; margin: 1rem 0;">Certificado de destaque e menção no mural</p>
+                            <div class="reward-cost">1,500 pontos</div>
+                            <button class="btn-redeem">Resgatar</button>
+                        </div>
+    
+                        <div class="reward-card">
+                            <div class="reward-icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <h3 class="reward-title">Vaga Premiada</h3>
+                            <p style="opacity: 0.8; margin: 1rem 0;">Vaga de estacionamento reservada por 1 mês</p>
+                            <div class="reward-cost">2,500 pontos</div>
+                            <button class="btn-redeem" disabled>Pontos Insuficientes</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+         <!-- Meus Cursos -->
+            <section class="content-section" id="courses">
+                <div class="section-header">
+                    <h1 class="section-title">Meus Cursos</h1>
+                    <p class="section-subtitle">Acompanhe seu progresso nos cursos em andamento</p>
+                </div>
+
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-header">
+                            <span class="course-level level-intermediate">Em Andamento</span>
+                            <span class="course-points"><i class="fas fa-star"></i> 200 pts</span>
+                        </div>
+                        <h3 class="course-title">Pesquisa e Desenvolvimento</h3>
+                        <p class="course-description">Metodologias avançadas em P&D farmacêutico e inovação.</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%;"></div>
+                        </div>
+                        <p style="margin: 0.5rem 0; opacity: 0.8;">75% concluído</p>
+                        <div class="course-footer">
+                            <span><i class="fas fa-clock"></i> 10 horas</span>
+                            <button class="btn-redeem">Continuar</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <span class="course-level level-beginner" style="background: #4ecdc4;">Concluído</span>
+                            <span class="course-points"><i class="fas fa-star"></i> 120 pts</span>
+                        </div>
+                        <h3 class="course-title">Química Medicinal Básica</h3>
+                        <p class="course-description">Fundamentos da química aplicada ao desenvolvimento de medicamentos.</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%;"></div>
+                        </div>
+                        <p style="margin: 0.5rem 0; color: #4ecdc4;">✓ Concluído em 15/08/2025</p>
+                        <div class="course-footer">
+                            <span><i class="fas fa-certificate"></i> Certificado</span>
+                            <button class="btn-redeem">Ver Certificado</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <span class="course-level level-advanced">Em Andamento</span>
+                            <span class="course-points"><i class="fas fa-star"></i> 300 pts</span>
+                        </div>
+                        <h3 class="course-title">Biotecnologia Farmacêutica</h3>
+                        <p class="course-description">Aplicações da biotecnologia no desenvolvimento de medicamentos biológicos.</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 30%;"></div>
+                        </div>
+                        <p style="margin: 0.5rem 0; opacity: 0.8;">30% concluído</p>
+                        <div class="course-footer">
+                            <span><i class="fas fa-clock"></i> 15 horas</span>
+                            <button class="btn-redeem">Continuar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Catálogo de Cursos -->
+<section class="content-section" id="catalog">
+    <div class="section-header">
+        <h1 class="section-title">Catálogo de Cursos</h1>
+        <p class="section-subtitle">Explore todos os cursos disponíveis na plataforma</p>
+    </div>
+
+    <div class="courses-grid">
+        <div class="course-card card-beginner">
+            <div class="course-header">
+                <span class="course-level level-beginner">Iniciante</span>
+                <span class="course-points"><i class="fas fa-star"></i> 80 pts</span>
+            </div>
+            <h3 class="course-title">Introdução à Farmacologia</h3>
+            <p class="course-description">Conceitos básicos sobre medicamentos e seu funcionamento no organismo.</p>
+            <div class="course-footer">
+                <span><i class="fas fa-clock"></i> 6 horas</span>
+                <button class="btn-redeem">Iniciar Curso</button>
+            </div>
+        </div>
+
+        <div class="course-card card-intermediate">
+            <div class="course-header">
+                <span class="course-level level-intermediate">Intermediário</span>
+                <span class="course-points"><i class="fas fa-star"></i> 150 pts</span>
+            </div>
+            <h3 class="course-title">Controle de Qualidade</h3>
+            <p class="course-description">Métodos analíticos e controle de qualidade em produtos farmacêuticos.</p>
+            <div class="course-footer">
+                <span><i class="fas fa-clock"></i> 8 horas</span>
+                <button class="btn-redeem">Iniciar Curso</button>
+            </div>
+        </div>
+
+        <div class="course-card card-advanced">
+            <div class="course-header">
+                <span class="course-level level-advanced">Avançado</span>
+                <span class="course-points"><i class="fas fa-star"></i> 250 pts</span>
+            </div>
+            <h3 class="course-title">Análises Regulatórias</h3>
+            <p class="course-description">Navegação complexa no ambiente regulatório internacional.</p>
+            <div class="course-footer">
+                <span><i class="fas fa-clock"></i> 12 horas</span>
+                <button class="btn-redeem">Iniciar Curso</button>
+            </div>
+        </div>
+
+        <div class="course-card card-beginner">
+            <div class="course-header">
+                <span class="course-level level-beginner">Iniciante</span>
+                <span class="course-points"><i class="fas fa-star"></i> 90 pts</span>
+            </div>
+            <h3 class="course-title">Ética Farmacêutica</h3>
+            <p class="course-description">Princípios éticos na prática e pesquisa farmacêutica.</p>
+            <div class="course-footer">
+                <span><i class="fas fa-clock"></i> 5 horas</span>
+                <button class="btn-redeem">Iniciar Curso</button>
+            </div>
+        </div>
+
+        <div class="course-card card-beginner">
+            <div class="course-header">
+                <span class="course-level level-beginner">Iniciante</span>
+                <span class="course-points"><i class="fas fa-star"></i> 80 pts</span>
+            </div>
+            <h3 class="course-title">Introdução à Liderança</h3>
+            <p class="course-description">Conceitos básicos sobre liderança no ambiente de trabalho</p>
+            <div class="course-footer">
+                <span><i class="fas fa-clock"></i> 6 horas</span>
+                <button class="btn-redeem">Iniciar Curso</button>
+            </div>
+        </div>
+
+        <div class="course-card card-intermediate">
+            <div class="course-header">
+                <span class="course-level level-intermediate">Intermediário</span>
+                <span class="course-points"><i class="fas fa-star"></i> 150 pts</span>
+            </div>
+            <h3 class="course-title">Gestão e Governança</h3>
+            <p class="course-description">Aprenda a como gerir sua equipe da melhor forma.</p>
+            <div class="course-footer">
+                <span><i class="fas fa-clock"></i> 8 horas</span>
+                <button class="btn-redeem">Iniciar Curso</button>
+            </div>
+        </div>
+
+        <div class="course-card card-advanced">
+            <div class="course-header">
+                <span class="course-level level-advanced">Avançado</span>
+                <span class="course-points"><i class="fas fa-star"></i> 250 pts</span>
+            </div>
+            <h3 class="course-title">Análises de Desempenho</h3>
+            <p class="course-description">Aprenda técnicas de análise de perfomance.</p>
+            <div class="course-footer">
+                <span><i class="fas fa-clock"></i> 12 horas</span>
+                <button class="btn-redeem">Iniciar Curso</button>
+            </div>
+        </div>
+
+        <div class="course-card card-beginner">
+            <div class="course-header">
+                <span class="course-level level-beginner">Iniciante</span>
+                <span class="course-points"><i class="fas fa-star"></i> 90 pts</span>
+            </div>
+            <h3 class="course-title">Ética de trabalho</h3>
+            <p class="course-description">Princípios éticos no ambiente de trabalho.</p>
+            <div class="course-footer">
+                <span><i class="fas fa-clock"></i> 5 horas</span>
+                <button class="btn-redeem">Iniciar Curso</button>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+            <!-- Trilhas de Ensino -->
+            <section class="content-section" id="paths">
+                <div class="section-header">
+                    <h1 class="section-title">Trilhas de Ensino</h1>
+                    <p class="section-subtitle">Jornadas estruturadas para o seu desenvolvimento profissional</p>
+                </div>
+
+                <div class="path-card">
+                    <div class="path-header">
+                        <h3>Trilha: Especialista em Farmacologia</h3>
+                        <span class="course-points"><i class="fas fa-trophy"></i> 500 pts</span>
+                    </div>
+                    <p>Torne-se um especialista em farmacologia com conhecimentos desde o básico até aplicações avançadas.</p>
+                    
+                    <div class="path-progress">
+                        <span>Progresso: 3/5 cursos concluídos</span>
+                        <div class="progress-bar" style="flex: 1;">
+                            <div class="progress-fill" style="width: 60%;"></div>
+                        </div>
+                        <span>60%</span>
+                    </div>
+                    
+                    <div class="path-steps">
+                        <div class="step-item step-completed">
+                            <i class="fas fa-check"></i>
+                            <div>Intro. Farmacologia</div>
+                        </div>
+                        <div class="step-item step-completed">
+                            <i class="fas fa-check"></i>
+                            <div>Química Medicinal</div>
+                        </div>
+                        <div class="step-item step-completed">
+                            <i class="fas fa-check"></i>
+                            <div>Farmacocinética</div>
+                        </div>
+                        <div class="step-item step-current">
+                            <i class="fas fa-play"></i>
+                            <div>Farm. Avançada</div>
+                        </div>
+                        <div class="step-item">
+                            <i class="fas fa-lock"></i>
+                            <div>Farm. Clínica</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="path-card">
+                    <div class="path-header">
+                        <h3>Trilha: Pesquisa e Desenvolvimento</h3>
+                        <span class="course-points"><i class="fas fa-trophy"></i> 750 pts</span>
+                    </div>
+                    <p>Desenvolva competências completas em P&D farmacêutico, da descoberta ao mercado.</p>
+                    
+                    <div class="path-progress">
+                        <span>Progresso: 1/6 cursos concluídos</span>
+                        <div class="progress-bar" style="flex: 1;">
+                            <div class="progress-fill" style="width: 17%;"></div>
+                        </div>
+                        <span>17%</span>
+                    </div>
+                    
+                    <div class="path-steps">
+                        <div class="step-item step-completed">
+                            <i class="fas fa-check"></i>
+                            <div>P&D Básico</div>
+                        </div>
+                        <div class="step-item step-current">
+                            <i class="fas fa-play"></i>
+                            <div>Biotecnologia</div>
+                        </div>
+                        <div class="step-item">
+                            <i class="fas fa-lock"></i>
+                            <div>Ensaios Clínicos</div>
+                        </div>
+                        <div class="step-item">
+                            <i class="fas fa-lock"></i>
+                            <div>Reg. Sanitário</div>
+                        </div>
+                        <div class="step-item">
+                            <i class="fas fa-lock"></i>
+                            <div>Lançamento</div>
+                        </div>
+                        <div class="step-item">
+                            <i class="fas fa-lock"></i>
+                            <div>Pós-Marketing</div>
+                        </div>
+</body>
+
+<script src="js/script.js"></script>
+
+</html>
